@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FFCEE3D5-463A-4183-9042-86F43197F53B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{38D06E52-92E9-4264-BCAE-94A076831602}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArchitecture.C4.Core", "src\ReverseArchitecture.C4.Model\ReverseArchitecture.C4.Core.csproj", "{87E32756-C4C0-4001-B57B-A05B3A3B37A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArchitecture.Analyzer.Abstractions", "src\ReverseArchitecture.Analyzer.Abstractions\ReverseArchitecture.Analyzer.Abstractions.csproj", "{F34E9795-8810-4954-9AB1-561D0793DE0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArchitecture.Analyzer.CSharpProjects", "src\ReverseArchitecture.Analyzer.CSharpProjects\ReverseArchitecture.Analyzer.CSharpProjects.csproj", "{5A939248-1519-4A73-A2C0-CA88DB1A9F8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "analyzers", "analyzers", "{DA7B8D40-3350-4942-B6ED-6665F56A9F1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{BDCC1C87-25A5-4ABE-B9C0-19766B228BF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArchitecture.Analyzer.Services", "src\ReverseArchitecture.Analyzer.Services\ReverseArchitecture.Analyzer.Services.csproj", "{C094BD6E-80F6-4487-B11A-B70CC871AEF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exports", "exports", "{CEF5254E-0BB7-4A7E-A3DD-EFA23C57B527}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArchitecture.C4.Export.Neo4j", "src\ReverseArchitecture.C4.Export.Neo4j\ReverseArchitecture.C4.Export.Neo4j.csproj", "{32B0DDE7-9305-4D9A-9D76-C630BD583BEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseArchitecture.C4.Core.Tests", "test\ReverseArchitecture.C4.Core.Tests\ReverseArchitecture.C4.Core.Tests.csproj", "{925BBF72-F971-4357-BACF-D00273DCC61A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87E32756-C4C0-4001-B57B-A05B3A3B37A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E32756-C4C0-4001-B57B-A05B3A3B37A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E32756-C4C0-4001-B57B-A05B3A3B37A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E32756-C4C0-4001-B57B-A05B3A3B37A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34E9795-8810-4954-9AB1-561D0793DE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34E9795-8810-4954-9AB1-561D0793DE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34E9795-8810-4954-9AB1-561D0793DE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34E9795-8810-4954-9AB1-561D0793DE0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A939248-1519-4A73-A2C0-CA88DB1A9F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A939248-1519-4A73-A2C0-CA88DB1A9F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A939248-1519-4A73-A2C0-CA88DB1A9F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A939248-1519-4A73-A2C0-CA88DB1A9F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C094BD6E-80F6-4487-B11A-B70CC871AEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C094BD6E-80F6-4487-B11A-B70CC871AEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C094BD6E-80F6-4487-B11A-B70CC871AEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C094BD6E-80F6-4487-B11A-B70CC871AEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B0DDE7-9305-4D9A-9D76-C630BD583BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B0DDE7-9305-4D9A-9D76-C630BD583BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B0DDE7-9305-4D9A-9D76-C630BD583BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B0DDE7-9305-4D9A-9D76-C630BD583BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925BBF72-F971-4357-BACF-D00273DCC61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925BBF72-F971-4357-BACF-D00273DCC61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925BBF72-F971-4357-BACF-D00273DCC61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925BBF72-F971-4357-BACF-D00273DCC61A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87E32756-C4C0-4001-B57B-A05B3A3B37A2} = {BDCC1C87-25A5-4ABE-B9C0-19766B228BF7}
+		{F34E9795-8810-4954-9AB1-561D0793DE0A} = {DA7B8D40-3350-4942-B6ED-6665F56A9F1B}
+		{5A939248-1519-4A73-A2C0-CA88DB1A9F8C} = {DA7B8D40-3350-4942-B6ED-6665F56A9F1B}
+		{DA7B8D40-3350-4942-B6ED-6665F56A9F1B} = {FFCEE3D5-463A-4183-9042-86F43197F53B}
+		{BDCC1C87-25A5-4ABE-B9C0-19766B228BF7} = {FFCEE3D5-463A-4183-9042-86F43197F53B}
+		{C094BD6E-80F6-4487-B11A-B70CC871AEF3} = {DA7B8D40-3350-4942-B6ED-6665F56A9F1B}
+		{CEF5254E-0BB7-4A7E-A3DD-EFA23C57B527} = {FFCEE3D5-463A-4183-9042-86F43197F53B}
+		{32B0DDE7-9305-4D9A-9D76-C630BD583BEE} = {CEF5254E-0BB7-4A7E-A3DD-EFA23C57B527}
+		{925BBF72-F971-4357-BACF-D00273DCC61A} = {38D06E52-92E9-4264-BCAE-94A076831602}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EAAD9C1-3265-48EA-AB4F-8E8897BEBEBC}
+	EndGlobalSection
+EndGlobal
