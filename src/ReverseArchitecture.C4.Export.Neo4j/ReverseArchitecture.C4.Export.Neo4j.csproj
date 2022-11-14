@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+    <PackageReference Include="Neo4j.Driver" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ReverseArchitecture.Analyzer.Services\ReverseArchitecture.Analyzer.Services.csproj" />
+    <ProjectReference Include="..\ReverseArchitecture.C4.Export.Abstractions\ReverseArchitecture.C4.Export.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
