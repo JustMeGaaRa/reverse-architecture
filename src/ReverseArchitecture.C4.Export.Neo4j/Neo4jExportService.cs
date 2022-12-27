@@ -57,7 +57,7 @@ namespace ReverseArchitecture.C4.Export.Neo4j
             where TPrimary : IAbstraction
         {
             return new[] { diagram.Scope.Abstraction.ToMergeQuery() }
-                .Concat(diagram.Scope.PrimaryElements.Select(x => x.ToMergeQuery()))
+                .Concat(diagram.PrimaryElements.Select(x => x.ToMergeQuery()))
                 .Concat(diagram.SupportingElements.Select(x => x.Abstraction.ToMergeQuery()))
                 .Concat(diagram.Relationships.Select(x => x.MapToMergeQuery()));
         }

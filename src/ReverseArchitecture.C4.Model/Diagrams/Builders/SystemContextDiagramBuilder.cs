@@ -26,13 +26,13 @@ namespace ReverseArchitecture.C4.Core.Diagrams.Builders
 
         public ISystemContextDiagramScopeBuilder WithScope(SoftwareSystem softwareSystem)
         {
-            _systemContextDiagram.Scope = new(softwareSystem, new());
+            _systemContextDiagram.Scope = new(softwareSystem);
             return this;
         }
 
         public ISystemContextDiagramScopeBuilder AddPrimaryElement(SoftwareSystem abstraction)
         {
-            _systemContextDiagram.Scope.PrimaryElements.Add(abstraction);
+            _systemContextDiagram.PrimaryElements.Add(abstraction);
             return this;
         }
 

@@ -4,7 +4,7 @@
     {
         public static class People
         {
-            public static Person Architect = new Person("Architect", string.Empty);
+            public static Person Architect = new("Architect", string.Empty);
             public static Person Developer = new("Developer", string.Empty);
         }
 

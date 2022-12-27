@@ -79,8 +79,8 @@ namespace ReverseArchitecture.C4.Core.Tests.Diagrams.Builders
             diagram.Should().NotBeNull();
             diagram.Scope.Should().NotBeNull();
             diagram.Scope.Abstraction.Should().NotBeNull();
-            diagram.Scope.PrimaryElements.Should().NotBeNull();
-            diagram.Scope.PrimaryElements.Should().HaveCount(8);
+            diagram.PrimaryElements.Should().NotBeNull();
+            diagram.PrimaryElements.Should().HaveCount(8);
             diagram.SupportingElements.Should().NotBeNull();
             diagram.SupportingElements.Should().HaveCount(2);
             diagram.Relationships.Should().NotBeNull();

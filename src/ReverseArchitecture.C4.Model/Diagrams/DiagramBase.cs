@@ -8,17 +8,19 @@ namespace ReverseArchitecture.C4.Core.Diagrams
     {
         public DiagramBase()
         {
-            Scope = new(default, new());
+            Scope = new Scope<TAbstraction>(default);
         }
 
-        public DiagramBase(Scope<TAbstraction, TPrimary> scope)
+        public DiagramBase(Scope<TAbstraction> scope)
         {
             Scope = scope ?? throw new ArgumentNullException(nameof(scope));
         }
 
         public Guid DiagramId { get; } = Guid.NewGuid();
 
-        public Scope<TAbstraction, TPrimary> Scope { get; set; }
+        public Scope<TAbstraction> Scope { get; set; }
+
+        public List<TPrimary> PrimaryElements { get; } = new List<TPrimary>();
 
         public List<Element> SupportingElements { get; } = new();
 

@@ -26,13 +26,13 @@ namespace ReverseArchitecture.C4.Core.Diagrams.Builders
 
         public IComponentDiagramScopeBuilder WithScope(Container container)
         {
-            _componentDiagram.Scope = new(container, new());
+            _componentDiagram.Scope = new(container);
             return this;
         }
 
         public IComponentDiagramScopeBuilder AddPrimaryElement(Component abstraction)
         {
-            _componentDiagram.Scope.PrimaryElements.Add(abstraction);
+            _componentDiagram.PrimaryElements.Add(abstraction);
             return this;
         }
 
